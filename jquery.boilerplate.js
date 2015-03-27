@@ -1,5 +1,5 @@
 /*!
- * My 'perfect' jQuery Plugin Boilerplate - v0.1.0
+ * My 'perfect' jQuery Plugin Boilerplate - v0.1.1
  * used to kick-start new jquery plugins easily
  * jQuery("selector").PerfectBoilerplate({configuration: "goes here"});
  *
@@ -20,8 +20,8 @@
 
     /**
      * makes the plugin available trough jquery
-     * @param {*} [settings]
-     * @returns {{object}|Plugin}
+     * @param {object} [settings]
+     * @returns {object|Plugin}
      */
     $.fn[pluginName] = function(settings)
     {
@@ -32,9 +32,9 @@
      * plugin class constructor, may usually not be changed
      * @constructor
      * @access private
-     * @param {*} elements
-     * @param {*} settings
-     * @returns {{object}|Plugin}
+     * @param {object} elements
+     * @param {object} settings
+     * @returns {object|Plugin}
      */
     function Plugin(elements, settings)
     {
